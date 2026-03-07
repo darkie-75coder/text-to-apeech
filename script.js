@@ -14,6 +14,7 @@ window.speechSynthesis.onvoiceschanged = () => {
 };
 
 voiceSelect.addEventListener("change", () => {
+  window.speechSynthesis.cancel(); // stops current
   speech.voice = voices[voiceSelect.value];
 });
 
@@ -21,3 +22,4 @@ document.querySelector("button").addEventListener("click", () => {
   speech.text = document.querySelector("textarea").value;
   window.speechSynthesis.speak(speech);
 });
+
