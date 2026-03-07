@@ -42,6 +42,10 @@ textarea {
   margin-bottom: 30px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 textarea::placeholder {
   color: #ddd;
   font-size: 16px;
@@ -88,3 +92,4 @@ select {
   background-position-x: calc(100% - 20px);
   background-position-y: 20px;
 }
+
